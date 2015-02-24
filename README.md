@@ -1,8 +1,7 @@
 # Saddler::Reporter::Support
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/saddler/reporter/support`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+[![Gem Version](http://img.shields.io/gem/v/saddler-reporter-support.svg?style=flat)](http://badge.fury.io/rb/saddler-reporter-support)
+[![Build Status](http://img.shields.io/travis/packsaddle/ruby-saddler-reporter-support/master.svg?style=flat)](https://travis-ci.org/packsaddle/ruby-saddler-reporter-support)
 
 ## Installation
 
@@ -20,10 +19,6 @@ Or install it yourself as:
 
     $ gem install saddler-reporter-support
 
-## Usage
-
-TODO: Write usage instructions here
-
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -32,7 +27,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/saddler-reporter-support/fork )
+1. Fork it ( https://github.com/packsaddle/ruby-saddler-reporter-support/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
