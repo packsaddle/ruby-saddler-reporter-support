@@ -17,10 +17,10 @@ module Saddler
       # Interface for saddler-reporter
       #
       # @param messages [String] reporting message. checkstyle format.
-      # @param _options [Hash] options from saddler cli.
+      # @param options [Hash] options from saddler cli.
       #
       # @return [void]
-      def report(messages, _options)
+      def report(messages, options) # rubocop:disable Style/UnusedMethodArgument
         @output.puts messages
       end
 
