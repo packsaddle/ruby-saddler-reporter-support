@@ -9,7 +9,7 @@ module Saddler
       # Interface for saddler-reporter
       #
       # @param output [Object] output interface (defaults to: $stdout).
-      #   Use StringIO.new for testing.
+      #   Use StringIO for testing.
       def initialize(output)
         @output = output
       end
@@ -160,6 +160,7 @@ module Saddler
       #
       # @return [Object] parsed
       #
+      # @see ::Nori#parse
       # @see https://github.com/savonrb/nori
       def parse(xml)
         Nori
@@ -167,6 +168,16 @@ module Saddler
           .parse(xml)
       end
 
+      # @example absolute path
+      #   Dir.pwd #=> '/foo/bar'
+      #   file_relative_path_string('/foo/bar/baz') #=> 'baz'
+      #
+      # @example relative path
+      #   file_relative_path_string('./bar') #=> 'bar'
+      #
+      # @param file_name [String, #to_str] file path
+      #
+      # @return [String] file's relative path string from current
       def file_relative_path_string(file_name)
         if Pathname.new(file_name).absolute?
           Pathname.new(file_name).relative_path_from(Pathname.new(Dir.pwd)).to_s
