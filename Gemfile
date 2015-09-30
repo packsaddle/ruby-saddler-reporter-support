@@ -5,3 +5,4 @@ gemspec
 
 gem 'rubocop'
 gem 'yard'
+gem 'parse_gemspec-cli'
