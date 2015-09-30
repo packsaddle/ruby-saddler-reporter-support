@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['sanemat']
   spec.email         = ['o.gata.ken@gmail.com']
 
-  spec.summary       = 'Utilities for saddler-reporter'
-  spec.description   = 'Utilities for saddler-reporter'
+  spec.summary       = 'Interface for saddler-reporter. And utilities for saddler-reporter.'
+  spec.description   = 'Interface for saddler-reporter. And utilities for saddler-reporter.'
   spec.homepage      = 'https://github.com/packsaddle/ruby-saddler-reporter-support'
   spec.license       = 'MIT'
 
