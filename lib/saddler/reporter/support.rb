@@ -4,7 +4,7 @@ require 'saddler/reporter/support/version'
 
 module Saddler
   module Reporter
-    # Utilities for saddler-reporter
+    # Interface for saddler-reporter. And utilities for saddler-reporter
     module Support
       # Interface for saddler-reporter
       #
