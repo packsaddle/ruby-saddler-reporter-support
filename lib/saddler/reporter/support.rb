@@ -20,7 +20,7 @@ module Saddler
       # @param options [Hash] options from saddler cli.
       #
       # @return [void]
-      def report(messages, options) # rubocop:disable Style/UnusedMethodArgument
+      def report(messages, options) # rubocop:disable Lint/UnusedMethodArgument
         @output.puts messages
       end
 
