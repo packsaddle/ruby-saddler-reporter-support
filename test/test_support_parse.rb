@@ -1,5 +1,6 @@
 require_relative 'helper'
 
+# rubocop:disable Metrics/ClassLength
 module Saddler
   module Reporter
     module Support
@@ -31,6 +32,7 @@ module Saddler
           end
           test 'one_file_no_error' do
             one_file_no_error = File.read('./test/fixtures/one_file_no_error.xml')
+            # rubocop:disable Metrics/LineLength
             expected = {
               'checkstyle' => {
                 'file' => {
@@ -39,12 +41,14 @@ module Saddler
                 '@version' => '4.3'
               }
             }
+            # rubocop:enable Metrics/LineLength
             assert do
               target.parse(one_file_no_error) == expected
             end
           end
           test 'two_files_multi_errors' do
             two_files_multi_errors = File.read('./test/fixtures/two_files_multi_errors.xml')
+            # rubocop:disable Metrics/LineLength
             expected = {
               'checkstyle' => {
                 'file' => [
@@ -108,6 +112,7 @@ module Saddler
                 ]
               }
             }
+            # rubocop:enable Metrics/LineLength
             assert do
               target.parse(two_files_multi_errors) == expected
             end
@@ -117,3 +122,4 @@ module Saddler
     end
   end
 end
+# rubocop:enable Metrics/ClassLength

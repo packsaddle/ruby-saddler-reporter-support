@@ -26,6 +26,7 @@ module Saddler
 
       # Parser from xml to Plain Old Ruby Object with Nori
       #
+      # rubocop:disable Metrics/LineLength
       # @example one file no error
       #   xml = <<-XML
       #   <?xml version='1.0' encoding='UTF-8'?>
@@ -155,6 +156,7 @@ module Saddler
       #       ]
       #     }
       #   }
+      # rubocop:enable Metrics/LineLength
       #
       # @param xml [String] xml string
       #
